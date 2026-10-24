@@ -1,44 +1,119 @@
-/* body{
- margin: 0;
-} */
+body{
+    margin: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(10, 10, 10, 0.555)50%),
+    url(/assets/Marvel\ Chracters.jpg)no-repeat fixed center center / cover;
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(4px);
+    z-index: -1;
 
-header {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
 }
 
-.logo {
-    position: absolute;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 65px;
+}
+.logo{
+    margin-top: 38px;
+}
+
+h1 {
+    margin-top: 55px;
+    color: white;
+    font-family: Isometra;
+    /* text-shadow: 4px 2px 0.1px rgba(0,0,0,0.25); */
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(230,36,41,0.7);
+}
+
+.titre{
+    text-align: center;
+    flex: 1;
+}
+.espace{
+    width: 90px;
 }
 
 .onglets {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin: 0px;
+    padding: 0;
+    color: white;
+    text-shadow: 1px 2px 0.1px rgba(0,0,0,0.25);
 }
 
-.titre {
-    text-align: center;
+.onglets li {
+    display: block;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: rgb(121, 32, 32);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.onglets li:hover {
+    background-color: #3f0606; 
 }
 
 h2 {
     text-align: center;
     margin-top: 45px;
+    font-family: Isometra;
+    color: white;
+    text-shadow: 1px 2px 0.1px rgba(0,0,0,0.25);
+
 }
 
 .intro0 {
+    font-family: Montserrat;
     text-align: center;
     margin: 45px;
+    color: white;
+    text-shadow: 1px 2px 0.1px rgba(0,0,0,0.25);
+    background: rgba(121, 32, 32, 0.785);
+    padding: 5px;
 }
-
-.actu0 {
+.vitrine1 {
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
 }
 
-.trailer {
-    justify-content: end;
+.vitrine1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(230,36,41,0.5);
+}
+
+#actu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.texte{
+    width: 50%;
+    text-align:center;
+    background:  rgba(121, 32, 32, 0.785);
+    margin: 15px; ;
+}
+
+.actu1{
+    color: white;
+    font-family: Montserrat;
+    text-shadow: 1px 2px 0.1px rgba(0,0,0,0.25);
+}
+
+.video{
+    margin-top: 75px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
